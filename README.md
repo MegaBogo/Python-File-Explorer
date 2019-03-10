@@ -16,13 +16,13 @@ file들을 files 에 담기
 cd ..하면 뒤로 이동가기
 
 그외에
-```python
+~~~python
 for filename in filenames:
     full_filename = os.path.join(dirname, filename)
     ext = os.path.splitext(full_filename)[-1]
     if(ext == ''):
         ext = 'directory'
-```
+~~~
 
 
 
