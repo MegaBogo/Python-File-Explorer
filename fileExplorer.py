@@ -7,12 +7,11 @@ def exec():
         files = search_dir(dir)
         cmd = str(input(":"))
 
-        if(cmd == 'exit'):
+        if cmd == 'exit':
             print("종료")
             break
 
-
-        if(cmd == 'cd ..'):
+        if cmd == 'cd ..':
             path = os.path.abspath(os.path.join(dir, ".."))
             os_chdir(path)
         else:
@@ -41,13 +40,14 @@ def search_dir(dirname):
     for filename in filenames:
         full_filename = os.path.join(dirname, filename)
 
-        if os.path.isdir(full_filename):
-            ext = 'directory'
-        elif os.path.isfile(full_filename):
-            ext = os.path.splitext(full_filename)[-1]
+        if os.path.isdir(full_filename) or os.path.isfile(full_filename):
+            if os.path.isdir(full_filename):
+                ext = 'directory'
+            else:
+                ext = os.path.splitext(full_filename)[-1]
 
-        print("%s | %s" % ("{0:<10}".format(ext), filename))
-        files[filename] = {'ext':ext,'path':full_filename}
+            print("%s | %s" % ("{0:<10}".format(ext), filename))
+            files[filename] = {'ext':ext,'path':full_filename}
 
     return files
 
