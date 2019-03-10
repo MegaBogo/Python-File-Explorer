@@ -18,7 +18,7 @@ def exec():
             if cmd in files.keys():
                 file = files[cmd]
                 path = file['path']
-                if (file['ext'] == 'directory'):
+                if (file['type'] == 'directory'):
                     os_chdir(path)
                 else:
                     file_read(path)
@@ -40,14 +40,18 @@ def search_dir(dirname):
     for filename in filenames:
         full_filename = os.path.join(dirname, filename)
 
+        img = os.path.exists(full_filename)
+
+        print(img)
+
         if os.path.isdir(full_filename) or os.path.isfile(full_filename):
             if os.path.isdir(full_filename):
-                ext = 'directory'
+                type = 'directory'
             else:
-                ext = os.path.splitext(full_filename)[-1]
+                type = os.path.splitext(full_filename)[-1]
 
-            print("%s | %s" % ("{0:<10}".format(ext), filename))
-            files[filename] = {'ext':ext,'path':full_filename}
+            print("%s | %s" % ("{0:<10}".format(type), filename))
+            files[filename] = {'type':type,'path':full_filename}
 
     return files
 
