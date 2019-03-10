@@ -15,9 +15,14 @@ file들을 files 에 담기
 키보드 명령어를 받아 exit이면 종료
 cd ..하면 뒤로 이동가기
 
-그외에는 files들을 
-for문으로 돌려서
-
+그외에
+```
+for filename in filenames:
+    full_filename = os.path.join(dirname, filename)
+    ext = os.path.splitext(full_filename)[-1]
+    if(ext == ''):
+        ext = 'directory'
+```
 
 
 
