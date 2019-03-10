@@ -40,10 +40,6 @@ def search_dir(dirname):
     for filename in filenames:
         full_filename = os.path.join(dirname, filename)
 
-        img = os.path.exists(full_filename)
-
-        print(img)
-
         if os.path.isdir(full_filename) or os.path.isfile(full_filename):
             if os.path.isdir(full_filename):
                 type = 'directory'
