@@ -23,4 +23,4 @@ for문으로 돌려서
 
 
 
-<img width="400" height="200" src="intro-img.gif"></img>
+<img width="600" height="300" src="intro-img.gif"></img>
