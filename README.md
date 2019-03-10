@@ -58,13 +58,13 @@ gitignore 파일처럼 디렉토리는 아니지만 파일명에 확장자명이
 
 os모듈에서 파일 존재 / 디렉토리 존재 여부를 알려주는 함수가 존재했다.
 
-1. 파일 존재 여부
+1. 파일 존재 여부<br />
 : os.path.isdir(path)
 
-2. 디렉토리 존재 여부
+2. 디렉토리 존재 여부<br />
 : os.path.isdir(path)
 
-파일/디렉토리 뿐만 아니라 link인지 mount인지 알려주는 함수도 존재했다.
+파일/디렉토리 뿐만 아니라 link인지 mount인지 알려주는 함수도 존재했다.<br />
 ( os.path.islink(path), os.path.ismount(path) )
 
 
