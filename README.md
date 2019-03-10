@@ -51,7 +51,7 @@ os.chdir(path)
 
 
 ## 정리한 내용 토대로 작업한 1차 결과물
-<img width="600" height="300" src="intro-img.gif"></img>
+<img src="intro-img.gif"></img>
 
 ## 1차 결과물의 문제점 발견
 gitignore 파일처럼 디렉토리는 아니지만 파일명에 확장자명이 붙지 않는 파일들의 대한 처리 로직 미흡
@@ -70,7 +70,7 @@ os모듈에서 파일 존재 / 디렉토리 존재 여부를 알려주는 함수
 ( os.path.islink(path), os.path.ismount(path) )
 
 ## 2차 작업
-<img width="600" height="300" src="intro-img2.gif"></img><br />
+<img src="intro-img2.gif"></img><br />
 파일/디렉토리 구분은 끝났다.
 
 이제 이미지를 binary해서 뿌려줄지(...) 아니면 아예 제외를 해야하는지에 대한 부분.<br />
