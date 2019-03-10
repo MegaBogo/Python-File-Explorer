@@ -24,7 +24,11 @@ file들을 files 에 담기
 키보드 명령어를 받아 exit이면 종료
 cd ..하면 뒤로 이동가기
 
-###1. os모듈에서 디렉토리 목록을 보여주는 함수는 무엇인가?
+디렉토리 목록을 파일/디렉토리로 구분하여
+파일인 경우는 파일 내용을 출력하고
+디렉토리인 경우는 입력한 디렉토리로 경로 변경해주기!
+
+### 1. os모듈에서 디렉토리 목록을 보여주는 함수는 무엇인가?
 - os.listdir(dirname)
 : dirname에 있는 디렉토리 목록을 보여준다
 
@@ -33,16 +37,16 @@ cd ..하면 뒤로 이동가기
 
 현재 디렉토리만 보여주는 기능을 원하기때문에 os.listdir(dirname)으로 작업했다.
 
-그외
-```python
-for filename in filenames:
-    full_filename = os.path.join(dirname, filename)
-    ext = os.path.splitext(full_filename)[-1]
-    if(ext == ''):
-        ext = 'directory'
-```
+### 2. os모듈에서 파일명의 확장자만 추출할 수 있는게 있는가?
+os.path.splitext(full_filename)
+: 파일 이름과 확장자를 한 쌍이 되도록 해주는 함수!
+  os.path.splitext(full_filename)[-1]를 사용하면 파일의 확장자를 가져올 수 있다
+
+### 3. os모듈에서 디렉토리를 변경해주는 함수가 있는가?
+os.chdir(path)
+: path의 값으로 디렉토리를 변경해준다.
 
 
-
-
+## 작업 흐름을 토대로 작업한 1차 결과물
 <img width="600" height="300" src="intro-img.gif"></img>
+
