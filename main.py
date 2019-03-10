@@ -1,4 +1,5 @@
 import fileExplorer
 
 
-fileExplorer.exec()
+if __name__ == "__main__":
+    fileExplorer.exec()
