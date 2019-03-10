@@ -24,6 +24,15 @@ file들을 files 에 담기
 키보드 명령어를 받아 exit이면 종료
 cd ..하면 뒤로 이동가기
 
+###1. os모듈에서 디렉토리 목록을 보여주는 함수는 무엇인가?
+- os.listdir(dirname)
+: dirname에 있는 디렉토리 목록을 보여준다
+
+- os.walk(dirname)
+: dirname에 있는 시작 디렉토리부터 하위 디렉토리를 차례대로 보여준다
+
+현재 디렉토리만 보여주는 기능을 원하기때문에 os.listdir(dirname)으로 작업했다.
+
 그외
 ```python
 for filename in filenames:
