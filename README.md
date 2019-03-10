@@ -50,7 +50,7 @@ os.chdir(path)
 : path의 값으로 디렉토리를 변경해준다.
 
 
-## 작업 흐름을 토대로 작업한 1차 결과물
+## 정리한 내용 토대로 작업한 1차 결과물
 <img width="600" height="300" src="intro-img.gif"></img>
 
 ## 1차 결과물의 문제점 발견
