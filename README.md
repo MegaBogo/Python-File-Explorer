@@ -8,4 +8,19 @@
 ## 조건
 - Ptyhon 내장모듈만 사용하자
 
+## 작업 흐름
+main.py을 실행하면 현재 디렉토리 목록을 보여주고
+file들을 files 에 담기
+
+키보드 명령어를 받아 exit이면 종료
+cd ..하면 뒤로 이동가기
+
+그외에는 files들을 
+for문으로 돌려서
+
+
+
+
+
+
 <img width="400" height="200" src="intro-img.gif"></img>
