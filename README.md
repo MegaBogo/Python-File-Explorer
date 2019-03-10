@@ -51,7 +51,23 @@ os.chdir(path)
 <img width="600" height="300" src="intro-img.gif"></img>
 
 ## 1차 결과물의 문제점 발견
-### 1. gitignore 파일처럼 디렉토리는 아니지만 파일명에 확장자명이 붙지 않는 파일들의 대한 처리 로직 미흡
+gitignore 파일처럼 디렉토리는 아니지만 파일명에 확장자명이 붙지 않는 파일들의 대한 처리 로직 미흡
+
+그렇다면 파일을 확장자명으로 하는것이 아닌 
+실제 이 파일이 디렉토리인지 파일인지 true로 넘겨주는 함수가 있는지 os모듈에서 찾아보았다
+
+os모듈에서 파일 존재 / 디렉토리 존재 여부를 알려주는 함수가 존재했다.
+
+1. 파일 존재 여부
+: os.path.isdir(path)
+
+2. 디렉토리 존재 여부
+: os.path.isdir(path)
+
+파일/디렉토리 뿐만 아니라 link인지 mount인지 알려주는 함수도 존재했다.
+( os.path.islink(path), os.path.ismount(path) )
+
+
 
 
 
